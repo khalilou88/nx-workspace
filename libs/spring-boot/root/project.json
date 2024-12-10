@@ -10,7 +10,7 @@
         "{options.outputDirLocalRepo}"
       ],
       "options": {
-        "task": "install -N"
+        "task": "install "
       }
     }
   }
