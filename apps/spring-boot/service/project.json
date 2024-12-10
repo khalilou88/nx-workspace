@@ -1,8 +1,8 @@
 {
-  "name": "infrastructure",
-  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "name": "service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/spring-boot/service/src",
   "projectType": "application",
-  "sourceRoot": "./apps/spring-boot/service/infrastructure/src",
   "targets": {
     "build": {
       "executor": "@jnxplus/nx-maven:run-task",
