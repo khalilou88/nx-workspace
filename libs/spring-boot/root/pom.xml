@@ -12,5 +12,6 @@
 
   <modules>
     <module>../parent</module>
+    <module>../../../apps/spring-boot/service/infrastructure</module>
   </modules>
 </project>
