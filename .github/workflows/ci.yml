@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 permissions:
@@ -29,6 +29,12 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
 
       - run: npm ci --legacy-peer-deps
       - uses: nrwl/nx-set-shas@v4
